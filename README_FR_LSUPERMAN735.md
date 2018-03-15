@@ -12,7 +12,7 @@
 </div>
 
 <div align="center">
-	A declarative view library for Roblox Lua inspired by <a href="https://reactjs.org">React</a>.
+	Une bibliothèque de vues déclarative pour Roblox Lua inspirée par <a href="https://reactjs.org">React</a>.
 </div>
 
 <div>&nbsp;</div>
@@ -41,9 +41,9 @@ local LocalPlayer = game:GetService("Players").LocalPlayer
 
 local Roact = require(Roact)
 
--- Define a functional component
+-- Définir un composant fonctionnel
 local function HelloComponent()
-	-- createElement takes three arguments:
+	-- createElement prend trois arguments :
 	-- * The type of element to make
 	-- * Optionally, a list of properties to provide
 	-- * Optionally, a dictionary of children. The key is that child's Name
