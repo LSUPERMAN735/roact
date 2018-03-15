@@ -44,9 +44,9 @@ local Roact = require(Roact)
 -- Définir un composant fonctionnel
 local function HelloComponent()
 	-- createElement prend trois arguments :
-	-- * The type of element to make
-	-- * Optionally, a list of properties to provide
-	-- * Optionally, a dictionary of children. The key is that child's Name
+	-- * Le type d'élément à faire
+        -- * Éventuellement, une liste de propriétés à fournir
+        -- * Facultativement, un dictionnaire d'enfants. La clé est le nom de cet enfant
 
 	return Roact.createElement("ScreenGui", {
 	}, {
@@ -57,29 +57,29 @@ local function HelloComponent()
 	})
 end
 
--- Create our virtual tree
+-- Créez notre arbre virtuel
 local root = Roact.createElement(HelloComponent)
 
--- Turn our virtual tree into real instances and put them in PlayerGui
+-- Transformez notre arbre virtuel en instances réelles et placez-les PlayerGui
 Roact.reify(root, LocalPlayer.PlayerGui, "HelloWorld")
 ```
 
-We can also write this example using a *stateful* component:
+Nous pouvons aussi écrire cet exemple en utilisant un *stateful* composant:
 
 ```lua
 local LocalPlayer = game:GetService("Players").LocalPlayer
 
 local Roact = require(Roact)
 
--- Create our component type
+-- Créez notre type de composant
 local HelloComponent = Roact.Component:extend("HelloComponent")
 
--- 'render' MUST be overridden.
+-- 'render' DOIT être substitué.
 function HelloComponent:render()
-	-- createElement takes three arguments:
-	-- * The type of element to make
-	-- * Optionally, a list of properties to provide
-	-- * Optionally, a dictionary of children. The key is that child's Name
+	-- createElement prend trois arguments :
+	-- * Le type d'élément à faire
+        -- * Éventuellement, une liste de propriétés à fournir
+        -- * Facultativement, un dictionnaire d'enfants. La clé est le nom de cet enfant
 
 	return Roact.createElement("ScreenGui", {
 	}, {
@@ -90,10 +90,10 @@ function HelloComponent:render()
 	})
 end
 
--- Create our virtual tree
+-- Créez notre arbre virtuel
 local root = Roact.createElement(HelloComponent)
 
--- Turn our virtual tree into real instances and put them in PlayerGui
+-- Transformez notre arbre virtuel en instances réelles et placez-les PlayerGui
 Roact.reify(root, LocalPlayer.PlayerGui, "HelloWorld")
 ```
 
