@@ -13,7 +13,7 @@
 
 <div align="center">
 	Une bibliothèque de vues déclarative pour Roblox Lua inspirée par <a href="https://reactjs.org">React</a>.
-</div>
+ </div>
 
 <div>&nbsp;</div>
 
@@ -29,12 +29,12 @@ Ce script d'installation est généré par un outil appelé [rbxpacker](https://
 ### Méthode 2 : Système de fichiers
 * Copiez le répertoire `lib` dans votre base de code
 * Renommez le dossier à `Roact`
-* Utilisez un plugin comme [Rojo] (https://github.com/LPGhatguy/rojo) pour synchroniser les fichiers dans un endroit
+* Utilisez un plugin comme [Rojo](https://github.com/LPGhatguy/rojo) pour synchroniser les fichiers dans un endroit
 
 ## Usage
 Cet exemple crée un `TextLabel` en plein écran avec un message d'accueil.
 
-Pour des exemples plus détaillés, consultez [la documentation] (#).
+Pour des exemples plus détaillés, consultez [the documentation](#).
 
 ```lua
 local LocalPlayer = game:GetService("Players").LocalPlayer
@@ -64,7 +64,7 @@ local root = Roact.createElement(HelloComponent)
 Roact.reify(root, LocalPlayer.PlayerGui, "HelloWorld")
 ```
 
-Nous pouvons aussi écrire cet exemple en utilisant un *stateful* composant:
+Nous pouvons aussi écrire cet exemple en utilisant un *stateful* composant :
 
 ```lua
 local LocalPlayer = game:GetService("Players").LocalPlayer
@@ -98,4 +98,4 @@ Roact.reify(root, LocalPlayer.PlayerGui, "HelloWorld")
 ```
 
 ## Licence
-Roact est disponible sous la licence Apache 2.0. Voir [LICENCE] (LICENCE) pour plus de détails.
+Roact est disponible sous la licence Apache 2.0. Voir [LICENSE](LICENSE) pour plus de détails.
