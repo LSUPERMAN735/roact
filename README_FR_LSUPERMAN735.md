@@ -22,7 +22,7 @@
 ### Méthode 1 : Script d'Installation  (Roblox Studio)
 * Télécharger la dernière version depuis la [GitHub releases page](https://github.com/Roblox/Roact/releases).
 * Utilisez le menu 'Exécuter le script' (situé dans l'onglet Test) pour localiser et exécuter ce script.
-* Suivez les instructions du programme d'installation
+* Suivez les instructions dans le programme d'installation
 
 Ce script d'installation est généré par un outil appelé [rbxpacker](https://github.com/LPGhatguy/rbxpacker).
 
