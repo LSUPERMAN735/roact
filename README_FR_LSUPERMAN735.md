@@ -26,7 +26,7 @@
 
 Ce script d'installation est généré par un outil appelé [rbxpacker](https://github.com/LPGhatguy/rbxpacker).
 
-### Méthode 2: Système de fichiers
+### Méthode 2 : Système de fichiers
 * Copiez le répertoire `lib` dans votre base de code
 * Renommez le dossier à `Roact`
 * Utilisez un plugin comme [Rojo] (https://github.com/LPGhatguy/rojo) pour synchroniser les fichiers dans un endroit
